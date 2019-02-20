@@ -1,4 +1,5 @@
-import Input.GlobalKeyListner;
+import Config.GlobalValues;
+import Input.GlobalKeyListener;
 import Input.Keyboard;
 
 import java.awt.*;
@@ -9,9 +10,10 @@ public class Manager {
 
     public static void main(String[] args){
         final Robot ROBOT = initialiseRobot();
+        GlobalValues.DEBUGGING = true;
 
-        GlobalKeyListner globalKeyListner = new GlobalKeyListner();
-        globalKeyListner.monitorKey();
+        GlobalKeyListener GlobalKeyListener = new GlobalKeyListener();
+        GlobalKeyListener.monitorKey();
 
         Keyboard keyboard = new Keyboard();
         keyboard.keyboardInput(robot);
