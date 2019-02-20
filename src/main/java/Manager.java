@@ -1,3 +1,4 @@
+import Input.GlobalKeyListner;
 import Input.Keyboard;
 
 import java.awt.*;
@@ -8,6 +9,9 @@ public class Manager {
 
     public static void main(String[] args){
         final Robot ROBOT = initialiseRobot();
+
+        GlobalKeyListner globalKeyListner = new GlobalKeyListner();
+        globalKeyListner.monitorKey();
 
         Keyboard keyboard = new Keyboard();
         keyboard.keyboardInput(robot);
