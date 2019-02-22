@@ -13,7 +13,7 @@ public class Manager {
         GlobalValues.DEBUGGING = true;
 
         GlobalKeyListener GlobalKeyListener = new GlobalKeyListener();
-        GlobalKeyListener.monitorKey();
+        GlobalKeyListener.monitorEvents();
 
         Keyboard keyboard = new Keyboard();
         keyboard.keyboardInput(robot);

@@ -24,7 +24,7 @@ public class RecordedInput {
     }
 
     /**
-     * Four mouse input
+     * For mouse input
      * @param mouseInput the mouse button pressed
      * @param cursorX x position of cursor
      * @param cursorY y position of cursor
